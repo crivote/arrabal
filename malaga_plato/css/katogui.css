@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Buenard');
+
+body {
+    background-color: white;
+    font-family: 'Buenard', serif;
+    padding: 5px 25px;
+    font-size: 1.2em;
+    margin: 0;
+    color: #444;
+}
+
+h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 1.7em;
+}
+
+
+header {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../images/malaga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header img {
+    width: 60px;
+    position: absolute;
+    top: 65%;
+    right: 45%;
+    color: white;
+    border: white;
+}
+
+
+nav li.encabezado {
+    display: inline-block;
+    max-width: 100%;
+    color: #fcfcfc;
+    position: relative;
+    border: 3px solid black;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.66);
+    border: outset 3px rgba(39, 40, 39, 0.36);
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif
+}
+
+nav li.encabezado:hover {
+    transform: translateY(2px);
+    color: dimgrey;
+    overflow: visible;
+}
+
+.submenu1,
+.submenu2,
+.submenu3,
+.submenu4 {
+    transition: all 0s;
+    height: 0px;
+    overflow: hidden;
+    font-size: 0.8em;
+    position: absolute;
+}
+
+.submenu1 a,
+.submenu2 a,
+.submenu3 a,
+.submenu4 a {
+    color: #fcfcfc;
+    border: outset 3px rgba(39, 40, 39, 0.36);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.66);
+}
+
+#menu li:hover .submenu1,
+#menu li:hover .submenu2,
+#menu li:hover .submenu3,
+#menu li:hover .submenu4 {
+    font-weight: bold;
+    color: black;
+    background-color: rgba(11, 11, 11, 0.98);
+    height: 300%;
+    overflow: visible;
+    display: inline;
+    min-width: 170px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    margin-right: -70px;
+    border: outset 3px rgba(39, 40, 39, 0.36);
+    top: 85px;
+}
+
+#menu {
+    border-top: 2px solid rgba(235, 255, 254, 0.99);
+    background-color: rgba(11, 11, 11, 0.98);
+    width: 100%;
+    height: 70px;
+}
+
+
+/* Aquí termina el header, banner y menu. */
+
+li img:nth-child(4),
+li img:nth-child(2),
+li img:nth-child(3) {
+    width: 5%;
+    height: 5%;
+}
+
+li span img:nth-of-type(1),
+li span img:nth-child(2),
+li span img:nth-child(3) {
+    width: 20%;
+    height: 20%;
+}
+
+.imagenes {
+    position: relative;
+    top: 600px;
+}
+
+.items1 {
+    background-image: url(../images/Cartademenu.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    width: 600px;
+    position: relative;
+    margin-top: -50%;
+    margin-left: 45%;
+    font-family: 'Buenard', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.items1 a:link {
+    color: red;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+}
+
+p {
+    max-width: 400px;
+}
+
+p,
+.img1,
+h1 {
+    margin-left: 100px;
+}
+
+
+footer {
+    background-color: rgba(4, 62, 93, 0.55);
+    border: 2px solid grey;
+    height: 80px;
+    position: relative;
+    top: 100px;
+}
+
+footer p {
+    display: inline;
+    font-family: 'Buenard', serif;
+    font-weight: bold;
+    border: 2px solid grey;
+}
+
+footer p:first-of-type {
+    position: absolute;
+    left: 110px;
+    top: -15px;
+    font-size: 1.2em;
+}
+
+footer p:last-of-type {
+    font-size: 0.8em;
+    position: absolute;
+    right: 450px;
+    top: 30px;
+}
+
+footer a img:last-of-type {
+    width: 40px;
+    height: 40px;
+}
+
+.imgf {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+footer a img {
+    /*       top: -250px;
+       left: 940px;*/
+}
+
+footer a img:hover {
+    box-shadow: 0px 0px 30px rgba(0, 98, 255, 0.8);
+    border-radius: 50%;
+    overflow: visible;
+}
+
+footer p {
+    cursor: pointer;
+    overflow: visible;
+}
+
+footer form {
+    transition: all 0.3s;
+    height: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+footer p:hover footer form {
+    overflow: visible;
+    height: 200px;
+    display: block;
+}
+
+
+.comida1 {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url();
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.comida2 {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+
+
+}
+
+.comida3 {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/long.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
