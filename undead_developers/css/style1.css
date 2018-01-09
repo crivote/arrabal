@@ -1,0 +1,343 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+/*font-family: 'Barlow Condensed', sans-serif;----- Para párrafo
+font-family: 'Changa', sans-serif; ----- Subtítulo
+font-family: 'Jura', sans-serif; -------título*/
+
+
+/*Esto es el aside*/
+/*aside.lateral{
+  background-color: white;
+}*/
+
+
+/*Esto es el body*/
+body{
+  background: linear-gradient(rgb(144,12,63),rgb(144,12,63), rgba(0,0,43,1));
+}
+/*header*/
+header {
+    border-radius: 0 0 70% 70%;
+    width: 100%;
+    background: linear-gradient(rgba(144,12,63,1)60%,rgba(144,12,63,0));
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+}
+header a {
+    display: block;
+    width: auto;
+
+}
+
+header img {
+    width: 15vh;
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.5));
+
+}
+/*propiedades de h*/
+h1{
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-family: 'Jura', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  color: rgb(255,255,255);
+}
+h2{
+  text-align: center;
+  text-decoration: none;
+  /*display:inline-block;*/
+  font-family: 'Jura', sans-serif;
+  font-size:2em;
+  letter-spacing: 4px;
+  color: rgb(255,255,255);
+}
+.populares h2{
+  display:block;
+  font-size: 1.4em;
+  text-shadow: 0px 0px 10px black;
+}
+.generos h2{
+
+    display: block;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 10px black;
+
+}
+.populares a{
+  text-decoration: none;
+}
+h3{
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-family: 'Jura', sans-serif;
+  font-size:1.8em;
+  letter-spacing: 4px;
+  color: rgb(255,255,255);
+  text-shadow: 1px 6px 10px #000;
+}
+/*propiedades del párrafo*/
+p{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  text-shadow: 1px 11px 30px #fff;
+  word-spacing: 0.1em;
+  line-height: 1.2em;
+  color: rgb(0,0,43);
+}
+/*Cambio en la primera letra del */
+p::first-letter{
+  font-size: 2em;
+  font-family: 'Jura', sans-serif;
+}
+
+.titulo{
+  width:100%;
+  background-color: rgb(144,12,63);
+}
+
+main {
+    padding: 0vh 5vh;
+    margin: 0vh auto 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+section {
+
+  display: inline-block;
+  box-sizing: border-box;
+  top: 30vh;
+}
+
+.populares{
+  padding: 0.5vh;
+  display:inline-block;
+  position:relative;
+  width:109vh;
+  box-sizing:border-box;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.populares a {
+    border-radius: 1vh;
+    background-color: #D3D3D3;
+    width: 40vh;
+    height: 30vh;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10vh;
+    margin: 0.5vh 0.5vh;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+a.shooter{
+  background-image:url(../iconos/shooter.svg);
+}
+
+a.accion{
+  background-image:url(../iconos/accion.svg);
+}
+/*Contenedor grandeque contiene a los géneros --y-- el contenedor de la descripción del género en la específica*/
+.generos, article.descripcion {
+  background-color: rgba(238,238,238,0.6);
+  border-radius: 10vh 10vh 0 0;
+  padding: 10vh 5vh 10vh;
+  box-sizing: border-box;
+  margin: 10vh;
+  text-align: center;
+  background: linear-gradient(rgba(238,238,238,0.6)90%,rgba(238,238,238,0));
+  position: relative;
+
+}
+article.descripcion{
+  margin-right: 30%;
+  margin-top: 17%;
+}
+/*Propiedades de los contenedores de los géneros*/
+.generos a {
+    border-radius: 1vh;
+    text-decoration:none;
+    background-color: #D3D3D3;
+    width: 30vh;
+    height: 20vh;
+    position: relative;
+    display: inline-block;
+    margin: 0.5vh;
+    padding: 5vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+a.aventura{
+  background-image:url(../iconos/aventura.svg);
+}
+a.carreras{
+  background-image:url(../iconos/carreras.svg);
+}
+a.deportes{
+  background-image:url(../iconos/deportes.svg);
+}
+a.estrategia{
+  background-image:url(../iconos/estrategia.svg);
+}
+a.indie{
+  background-image:url(../iconos/indie.svg);
+}
+a.puzzle{
+  background-image:url(../iconos/puzzle.svg);
+}
+a.rol{
+  background-image:url(../iconos/rol.svg);
+}
+a.sandbox{
+  background-image:url(../iconos/sandbox.svg);
+}
+a.simulacion{
+  background-image:url(../iconos/simulacion.svg);
+}
+
+/*Este aparece en la especifica*/
+img #banner{
+  width: 30vh;
+}
+/*Footer*/
+footer{
+  width: 100%;
+  height: 15vh;
+  position:relative;
+  bottom:0;
+  /*background-color: rgb(0,0,43);*/
+  color: rgb(238,238,238);
+}
+
+footer p{
+  margin: 0vh;
+}
+
+.fuentes{
+          border:3px solid white;
+          position:absolute;
+          width: 45vh;
+          height: 10vh;
+          top:2vh;
+          right: 5vh;
+
+}
+.aboutUs{        
+          position: absolute;
+          width: 30vh;
+          height: 10vh;
+          top:2vh;
+          left:2vh;
+          transition: all 3s;
+          transition-delay: 1s;
+}
+
+.aboutUs:hover{
+              width:60vh;
+}
+
+
+aside{
+  right: 5vh;
+    display: inline-block;
+    position: absolute;
+}
+aside.lateral li {
+    list-style: none;
+    line-height: 200%;
+}
+
+aside.lateral li img {
+    height: 30px;
+    margin-right: 10px;
+    filter: invert() opacity(0.5);
+    transition: all 0.3s;
+}
+
+aside.lateral{
+  border-radius: 10% 0 0 10%;
+  margin-top: 30vh;
+  right:0;
+  background-color:rgba(144,12,63);
+  padding:2vh;
+  /*box-sizing: border-box;*/
+  /*display:inline-block;*/
+  /*position:absolute;*/
+}
+.lateral li{
+  font-family: 'Jura', sans-serif;
+
+}
+/*imgagenes y relacionadas*/
+.descripcion img{
+  width: 100%;
+}
+
+/*-------------------BAAAANNER-------*/
+#banner{
+  padding-top: 150px;
+  position: relative;
+  height: 45vh;
+}
+#banner img{
+  width: 26vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#banner h1{
+  font-family: 'Jura', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 245px;
+  transform: translateX(-50%);
+  font-size: 52px;
+}
+
+#banner iframe{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 354px;
+}
+
+.relacionados img{
+      display: inline-block;
+      width: 30%;
+      height: auto;
+      margin-right: 4.5%;
+      margin-top: 1%;
+}
+.relacionados h2{
+  text-align: center;
+    text-decoration: none;
+    display:block;
+    font-family: 'Jura', sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+    color: rgb(255,255,255);
+}
+div.relacionados{
+  text-align: center;
+}
+img.relacionados:nth-child(3){
+      margin-right: 0;
+}
