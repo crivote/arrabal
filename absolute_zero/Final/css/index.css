@@ -1,0 +1,217 @@
+body{
+  background-color: gray;
+  text-align: center;
+}
+
+p{
+      text-align: left;
+      font-family: 'Tinos', serif;
+  }
+
+h1, h2, h3, a{
+      font-family: 'Michroma', sans-serif;
+  }
+
+/* Aqui empieza el header*/
+
+body > header{
+  text-align: left;
+  background: #F3DA0B;
+  padding-left: 10vw;
+  height: 15vh;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.63);
+  text-shadow: 4px -2px 5px rgba(124, 130, 126, 1);
+}
+
+header img{
+  height: 100%;
+  display: inline-block;
+}
+
+
+header h1{
+  position: absolute;
+  display: inline;
+  font-size: 30px;
+  right: 10%;
+  bottom: 17px;
+}
+
+
+
+/* Aqui termina el header*/
+
+/* Aqui empieza el section con la foto*/
+
+.fotoi{
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.63);
+}
+
+section article{
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 100%;
+  background-color: white;
+}
+
+/* Aqui termina el section con la foto*/
+
+
+
+/* Empieza el Main*/
+
+main{
+  margin: 0 auto;
+  background-color: gray;
+  width: 100%;
+  height: auto;
+
+}
+main ul{
+  list-style:none
+}
+
+main li{
+  width: 300px;
+  height: 150px;
+  display: inline-block;
+  border: 1px solid rgba(10, 1, 10, 0.18);
+  background-color: #ffffff3b;
+  background-clip: padding-box;
+  box-shadow: inset 0px 0px 300px -41px rgba(10,1,10,1);
+  margin: 1%;
+  transition: 2s;
+
+}
+
+main li:hover{
+  background-color: #ffffff;
+}
+
+ main a{
+  color: black;
+}
+  main a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* Y termino el Main*/
+
+/* Aqui empieza el NAV */
+
+
+nav{
+  margin-left: 0;
+  height: 30%;
+  width: 15%;
+  position: fixed;
+  top: 35%;
+}
+
+nav ul{
+  margin-left: 0;
+  list-style: none;
+}
+
+nav li{
+  text-align: left;
+  height: 40px;
+  width: 130px;
+  background: yellow;
+  padding-left: 8px;
+  margin-top: 10px;
+  position: relative;
+  transform:translateX(-140px);
+  transition: 1s;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+nav li:first-child{
+  width: 100px;
+  transform:translateX(-110px);
+
+}
+
+
+nav a{
+	font-family: 'Tinos', serif;
+	font-size:20px;
+	color: black;
+}
+nav a:hover{
+	color:black;
+}
+
+nav i{
+  color: black;
+  margin-left: 10px;
+  position: absolute;
+  right: 4px;
+  top: 6px;
+}
+
+
+nav li:hover{
+  transform:translateX(-42px);
+}
+
+
+/* Aqui termina el NAV */
+
+/* Footer y fin*/
+
+footer{
+  margin: 0 auto;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  padding-top: 0.6%;
+  padding-left: 10%;
+  color: white;
+  text-align: left;
+}
+
+
+footer p{
+  display: inline-block;
+  font-family: 'Tinos', serif;
+  font-size: 16px;
+  margin-left: 5%;
+
+
+}
+
+footer a{
+  color: red;
+}
+
+footer a:hover{
+  color: red;
+}
+footer img{
+  width: 3.5%;
+}
+
+
+@media screen and (max-width: 480px) {
+ header  h1{
+   visibility: hidden;
+  }
+  nav{
+    visibility: hidden;
+   }
+body > header{
+        text-align: center;
+        padding-right: 5%;
+    }
+}
