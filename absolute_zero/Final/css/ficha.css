@@ -51,14 +51,16 @@ header h1{
 
 /* Aqui termina el section con la foto*/
 
-article{
-    font-family: 'Tinos', serif;
-}
+/*article{
+    font-family: 'Michroma', serif;
+}*/
 h2{
     font-family: 'Michroma', sans-serif;
+	font-size: 2.5em;
 }
-p > h2{
+p{
     font-family: 'Michroma', sans-serif;
+	font-size: 1em;
 }
 .tabla{
     text-align:left;
@@ -70,6 +72,7 @@ main article{
       padding-top: 1em;
   padding-left: 4%;
   padding-right: 4%;
+	font-family: 'Michroma', serif;
 }
 
 main > p{
@@ -77,6 +80,7 @@ main > p{
     font-weight:bold;
 }
 .tabla article{
+	font-family: 'verdana', sans-serif;
     display:inline-block;
     padding:10px;
     margin-left:10px;

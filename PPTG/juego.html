@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>piedra papel tijeras</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+  	<script src="https://use.fontawesome.com/f978b2cae5.js"></script>
+  </head>
+
+  <body>
+ <div id="opciones">
+    <div class="row">
+		<div class="col-md-2 col-md-offset-3">
+			<i class="fa fa-hand-rock-o fa-5x fa-rotate-90" aria-hidden="true" fa-5x></i></div>
+		<div class="col-md-2">
+			<i class="fa fa-hand-paper-o fa-5x fa-rotate-90" aria-hidden="true"></i></div>
+		<div class="col-md-2">
+			<i class="fa fa-hand-scissors-o fa-5x fa-flip-horizontal" aria-hidden="true"></i></div>
+	</div>
+  	<div class="row">
+		<div class="col-md-2 col-md-offset-3">
+		 	<input type="button" data-jugada="Piedra" class="btn btn-primary" data-toggle="modal" value="Piedra" data-target="#exampleModal"/></div>
+		<div class="col-md-2">
+			<input type="button" data-jugada="Papel" class="btn btn-danger" data-toggle="modal" value="Papel" data-target="#exampleModal"/></div>
+		<div class="col-md-2">
+			<input type="button" data-jugada="Tijeras" class="btn btn-warning" data-toggle="modal" value="Tijeras" data-target="#exampleModal"/></div>
+	 </div>
+  </div>
+
+			  <!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h2 class="modal-title" id="exampleModalLabel">Resultado!</h2>
+			  </div>
+			  <div class="modal-body">
+				<div id="resultado" ></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+			  </div>
+			</div>
+		  </div>
+	  	</div>
+      
+
+  <script type="text/javascript">
+
+$(document).ready(function(){
+
+	$('#opciones input').click(function(){
+	  let jugada_usuario=$(this).attr('data-jugada');
+	  jugar(jugada_usuario);
+	});
+
+      function jugar(jugada_usuario){
+
+      function aleatorio(minimo,maximo){
+
+    		var numero = Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
+    		var eleccion = opciones[numero];
+    		return eleccion;
+        }
+
+		/*var objectEleccion = {eleccion1='Piedra', eleccion2='Papel', eleccion3='Tijeras'}*/
+        var mensaje;
+        var opciones = ["Piedra", "Papel", "Tijeras"];
+        var opcionMaquina = aleatorio(0,2);
+        console.log (opcionMaquina);
+
+        if(jugada_usuario === opcionMaquina)
+			{
+				mensaje = "<h2>¡Empate!<br /><img src='http://i60.tinypic.com/2m4dhso.png'/></h2>";
+			}
+
+	  else if((jugada_usuario === "Piedra" && opcionMaquina === "Tijeras") ||
+              (jugada_usuario === "Papel" && opcionMaquina === "Piedra") ||
+              (jugada_usuario === "Tijeras" && opcionMaquina == "Papel")
+            )
+            {
+            	mensaje = "<h2>¡Has ganado!<br /><img src='http://i62.tinypic.com/1ze8uau.png'/></h2>";
+            } else {
+				            mensaje = "<h2>¡Has perdido!<br /><img src='http://i57.tinypic.com/6r3dcg.png'/></h2>";
+			              }
+		  
+		  function iconosElegidos(jugada_usuario){
+			  if(jugada_usuario === "Piedra"){
+				  jugada_usuario = "<i class='fa fa-hand-rock-o fa-2x fa-rotate-90' aria-hidden='true'></i>";
+			  }else if(jugada_usuario === "Papel"){
+				  jugada_usuario = "<i class='fa fa-hand-paper-o fa-2x fa-rotate-90' aria-hidden='true'></i>";
+			  }else{
+				  jugada_usuario = "<i class='fa fa-hand-scissors-o fa-2x fa-flip-horizontal' aria-hidden='true'></i>";
+			  }
+			  return jugada_usuario;
+		  }
+		  
+		  document.getElementById('resultado').innerHTML =
+            "<p><span>Tú</span> has elegido " + "<span>" + iconosElegidos(jugada_usuario) + "</span>" +
+            " y <span> la Máquina </span> ha elegido " + "<span>" + iconosElegidos(opcionMaquina) + "</span>"
+            + ".</p>" + mensaje;
+          }
+	
+        });
+      </script>
+	  <style>
+		  #resultado{
+			  text-align: center;
+		  }
+	  </style>
+  </body>
+</html>
