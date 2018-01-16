@@ -1,0 +1,157 @@
+
+body{
+  background: rgb(144,12,63);
+}
+
+img{
+  border-radius: 50%;
+  background-color: white;
+}
+
+h1, h2, h3{
+  color: white;
+}
+
+h1{
+  font-size: 85px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 35px;
+}
+
+a{
+  color: white;
+  font-size: 25px;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+/* Header */
+header {
+    border-radius: 0 0 70% 70%;
+    width: 100%;
+    background: linear-gradient(rgba(144,12,63,1)60%,rgba(144,12,63,0));
+    top: 0px;
+    z-index: 1;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+}
+header a {
+    margin-top: 5px;
+    display: block;
+    width: auto;
+}
+
+header img {
+    margin-top: 5px;
+    width: 12%;
+}
+
+div{
+  margin: 0 auto;
+}
+
+/* termina header */
+
+/* populares */
+
+.populares{
+  display: block;
+  width: 50%;
+  margin-top: 200px;
+  background-color: rgba(238,238,238,0.6);
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+  text-shadow: 0px 0px 10px black;
+  padding: 0,5%;
+}
+
+.populares a {
+    border-radius: 1%;
+    background-color: #D3D3D3;
+    width: 40%;
+    height: 30%;
+    position: relative;
+    display: inline-block;
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    margin: 0 10px 0 10px;
+}
+
+a.shooter{
+  background-image:url(../iconos/shooter.svg);
+}
+
+a.accion{
+  background-image:url(../iconos/accion.svg);
+}
+
+
+/* termina populares */
+
+
+
+/* generos */
+
+.generos{
+  display: block;
+  width: 85%;
+  background-color: rgba(238,238,238,0.6);
+  border-radius: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 10px black;
+  padding: 2%;
+}
+
+.generos a {
+    border-radius: 1%;
+    text-decoration:none;
+    background-color: #D3D3D3;
+    width: 30%;
+    height: 20%;
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+a.aventura{
+  background-image:url(../iconos/aventura.svg);
+}
+a.carreras{
+  background-image:url(../iconos/carreras.svg);
+}
+a.deportes{
+  background-image:url(../iconos/deportes.svg);
+}
+a.estrategia{
+  background-image:url(../iconos/estrategia.svg);
+}
+a.indie{
+  background-image:url(../iconos/indie.svg);
+}
+a.puzzle{
+  background-image:url(../iconos/puzzle.svg);
+}
+a.rol{
+  background-image:url(../iconos/rol.svg);
+}
+a.sandbox{
+  background-image:url(../iconos/sandbox.svg);
+}
+a.simulacion{
+  background-image:url(../iconos/simulacion.svg);
+}
