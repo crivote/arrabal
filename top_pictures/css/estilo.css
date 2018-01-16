@@ -183,16 +183,16 @@ span{
     background-image: url('../img/pulp.jpg');
 }
 
-#top-10 div:nth-of-type(8){
+#top-10 div:nth-of-type(10){
     background-image: url('../img/anillo.jpg');
 }
 
-#top-10 div:nth-of-type(9){
+#top-10 div:nth-of-type(8){
     background-image: url('../img/buenofeomalo.jpg');
 }
 
-#top-10 div:nth-of-type(10){
-    background-image: url('../img/clublucha.jpg');
+#top-10 div:nth-of-type(9){
+    background-image: url('../img/clubLucha.jpg');
 }
 
 /*COMIENZO FOOTER*/
@@ -364,4 +364,8 @@ ul>li:last-of-type{
 }
 .fa-book{
 	background-color: none;
+}
+
+li a {
+    color: white;
 }
