@@ -21,7 +21,7 @@ a{
 body{
 	background: linear-gradient(to bottom left,#386af8,black);
 	box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -96,7 +96,7 @@ h1{
 }
 .descripcion{
 	display: block;
-	margin: 2% 10%; 
+	margin: 2% 10%;
 	line-height: 2em;
 }
 .fotos{
@@ -206,14 +206,14 @@ header img{
 
 header h1{
 	width:100%;
- 
+
 }
 
-nav{    
+/*nav{
     color: white;
     margin-left: 10%;
     display: inline-block;
-}
+}*/
 
 main{
 	padding-top: 10%;
@@ -231,7 +231,7 @@ article.juegos{
 	display:inline-block;
 	text-align: center;
 	margin: 0.5em 1em;
-	vertical-align: top;	
+	vertical-align: top;
 }
 figure{
 	display:inline-block;
