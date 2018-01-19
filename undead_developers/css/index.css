@@ -14,14 +14,18 @@ h1, h2, h3{
 
 h1{
   font-size: 85px;
+font-family: 'Changa', sans-serif;
+
 }
 
 h2{
   font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 h3{
   font-size: 35px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 a{
@@ -33,6 +37,12 @@ a:hover{
   color: white;
   text-decoration: none;
 }
+
+p{
+    color:rgba(238,238,238,1);
+    font-family: 'Changa', sans-serif;
+}
+
 /* Header */
 header {
     border-radius: 0 0 70% 70%;
@@ -86,8 +96,18 @@ div{
     background-size: 50%;
     background-position: center;
     margin: 0 10px 0 10px;
+ transition:all 0.5s;
 }
 
+a.shooter{
+  background-image:url(../iconos/shooter.svg);
+}
+
+.populares a:hover{
+    background-color:darkgray;
+    transform:scale(1.1);
+    border-radius:20px;
+}
 a.shooter{
   background-image:url(../iconos/shooter.svg);
 }
@@ -126,6 +146,12 @@ a.accion{
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center;
+    transition:all 0.5s;
+}
+.generos a:hover{
+    background-color:darkgray;
+    transform:scale(1.1);
+    border-radius:20px;
 }
 
 a.aventura{
@@ -155,3 +181,47 @@ a.sandbox{
 a.simulacion{
   background-image:url(../iconos/simulacion.svg);
 }
+
+
+p{
+    color:white;
+    font-weight:bold;
+    text-shadow: 8px 4px 13px rgba(0, 0, 0, 1);
+}
+
+footer{
+    height:160px;
+    margin-top:20px;
+    background-color:  rgba(238,238,238,0.6);
+    border-radius: 50px 50px 0 0;
+    padding:2%;
+    display:block;
+    width:85%;
+    margin-top:20px;
+    margin-left:100px;
+    position:relative;
+}
+
+.redes{
+    font-size:20px;
+    display:inline-block;
+    position:absolute;
+    right:60px;
+}
+i.fa{
+    color:black;
+    margin-top:5px;
+    margin-left:5px;
+}
+.copy{
+    position:absolute;
+    bottom:0px;
+    
+}
+.copy i{
+    margin-right:8px;
+}
+.copy p{
+    text-shadow:none;
+}
+

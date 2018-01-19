@@ -1,4 +1,4 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
+﻿/* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 /*font-family: 'Barlow Condensed', sans-serif;----- Para párrafo
@@ -16,6 +16,7 @@ font-family: 'Jura', sans-serif; -------título*/
 body{
   background: linear-gradient(rgb(144,12,63),rgb(144,12,63), rgba(0,0,43,1));
 }
+
 /*header*/
 header {
     border-radius: 0 0 70% 70%;
@@ -26,18 +27,18 @@ header {
     position: fixed;
     display: inline-block;
     text-align: center;
+    font-family:
 }
 header a {
+    margin-top: 5px;
     display: block;
     width: auto;
-
 }
 
 header img {
     width: 15vh;
-
-
-
+    margin-top: 5px;
+    width: 12%;
 
 }
 /*propiedades de h*/
@@ -120,24 +121,8 @@ section {
   margin-top: 200px;
   background-color: rgba(238,238,238,0.6);
   border-radius: 50px 50px 0 0;
-
-
 }
 
-.populares a {
-    border-radius: 1vh;
-    background-color: #D3D3D3;
-    width: 40vh;
-    height: 30vh;
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10vh;
-    margin: 0.5vh 0.5vh;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-}
 
 a.shooter{
   background-image:url(../iconos/shooter.svg);
@@ -163,21 +148,7 @@ article.descripcion{
   margin-top: 17%;
 }
 /*Propiedades de los contenedores de los géneros*/
-.generos a {
-    border-radius: 1vh;
-    text-decoration:none;
-    background-color: #D3D3D3;
-    width: 30vh;
-    height: 20vh;
-    position: relative;
-    display: inline-block;
-    margin: 0.5vh;
-    padding: 5vh;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-}
+
 a.aventura{
   background-image:url(../iconos/aventura.svg);
 }
@@ -212,27 +183,30 @@ img #banner{
 }
 /*Footer*/
 footer{
-  width: 100%;
-  height: 15vh;
-  position:relative;
-  bottom:0;
-  /*background-color: rgb(0,0,43);*/
-  color: rgb(238,238,238);
+    height:160px;
+    margin-top:20px;
+    background-color:  rgba(238,238,238,0.6);
+    border-radius: 50px 50px 0 0;
+    padding:2%;
+    display:block;
+    width:85%;
+    margin-top:20px;
+    margin-left:100px;
+    position:relative;
 }
-
 footer p{
-  margin: 0vh;
+    color:white;
+    font-weight:bold;
+    text-shadow: 8px 4px 13px rgba(0, 0, 0, 1);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.redes{
+    font-size:20px;
+    display:inline-block;
+    position:absolute;
+    right:60px;
 }
 
-.fuentes{
-          border:3px solid white;
-          position:absolute;
-          width: 45vh;
-          height: 10vh;
-          top:2vh;
-          right: 5vh;
-
-}
 .aboutUs{
           position: absolute;
           width: 30vh;
@@ -242,12 +216,22 @@ footer p{
           transition: all 3s;
           transition-delay: 1s;
 }
-
-.aboutUs:hover{
-              width:60vh;
+i.fa{
+    color:black;
+    margin-top:5px;
+    margin-left:5px;
 }
-
-
+.copy{
+    position:absolute;
+    bottom:0px;
+    
+}
+.copy i{
+    margin-right:8px;
+}
+.copy p{
+    text-shadow:none;
+}
 aside{
   right: 5vh;
     display: inline-block;
