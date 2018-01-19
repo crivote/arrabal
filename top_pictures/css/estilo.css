@@ -4,9 +4,11 @@
     padding: 0;
 }
 body{
-    background-image: url('http://www.revanchamag.com/wp-content/uploads/2017/02/Cine.jpg');
+    background-image: url('https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+    
     
 }
 
@@ -24,7 +26,11 @@ header h1 a, header h1 a:hover{
     padding: 0;
     text-decoration: none;
 }
-
+.textaco{
+    background-color:white;
+    opacity: 0.5;
+    text-align: center;
+}
 
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,900);
