@@ -236,8 +236,8 @@ span{
 /*COMIENZO FOOTER*/
 footer{
     width: 100%;
-    height: 320px;
-    border-top: 3px darkorange solid;
+    height: 240px;
+    border-top: 2px darkorange solid;
 	line-height: 2.5em;
     margin-top: 5px;
     background: linear-gradient(black, grey); /* Standard syntax */
@@ -246,8 +246,7 @@ footer{
 /*DIV ARRIBA Y ABAJO*/
 .rrss-up{
 	width: 100%;
-	height: 155px;
-	position: relative;
+	position: absolute;
 }
 
 .rrss{
@@ -255,7 +254,6 @@ footer{
 	solid;
 	box-shadow: 2px 2px 2px black;
 	width: 100%;
-	height: 150px;
 	position: relative;
 }
 
@@ -265,8 +263,8 @@ ul{
 	width: 210px;
 	height: 60px;
 	position: absolute;
-	bottom: 30px;
-	right: 40px;
+    bottom: -230px;
+    right: 0px;
 }
 
 ul li{
@@ -322,18 +320,25 @@ ul>li:last-of-type{
 	font-size: 1em;
 	color: white;
 	width: 350px;
-	height: 1
+	height: 1;
 	position: absolute;
 	left: 0;
+	top: 0px;
 	margin: 10px 20px;
 	list-style: none;
 	line-height: 1.5em;
 }
+
+.fonts li:first-of-type {
+		text-shadow: 2px 2px 2px darkorange;
+		font-size: 0.8em;
+}
+
 /*LOGO FOOTER*/
 .logotipo{
 	position: absolute;
-	right: 20px;
-	bottom: 70px;
+    left: 520px;
+    bottom: -60px;
 	font-family: 'Satisfy';
     color: darkorange;
 	text-shadow: 3px 3px 5px white;
@@ -343,21 +348,21 @@ ul>li:last-of-type{
 
 /*AUTORES*/
 .autores{
-	float: left;
-	font-family: Verdana;
-	font-size: 1.1em;
-	color: white;
-	width: 300px;
-	height: 109px;
-	line-height: 1em;
-	position: absolute;
-	left: 0;
-	margin: 10px 20px;
-	list-style: none;
+    float: left;
+    font-family: Verdana;
+    font-size: 0.7em;
+    color: white;
+    width: 300px;
+    height: 109px;
+    line-height: 0.3em;
+    position: absolute;
+    left: 100px;
+    top: -3px;
+    margin: 10px 20px;
+    list-style: none;
 }
 .autores li:first-of-type{
 	text-shadow: 2px 2px 2px darkorange;
-	border-bottom: 1px solid darkorange;
 	margin-bottom: 20px;
     padding: 9px;
 }
@@ -366,28 +371,26 @@ ul>li:last-of-type{
 .rrss p:first-of-type{
 	float: left;
 	position: absolute;
-	left: 40%;
-	top: 5px;
+    left: 40%;
+    top: 190px;
 	font-family: Verdana;
-	font-size: 1.1em;
+	font-size: 0.8em;
 	text-shadow: 2px 2px 2px darkorange;
 	color: white;
 	width: auto;
-	border-bottom: 1px solid darkorange;
 }
 
 /*RRSS TITLE*/
 .rrss p:last-of-type{
 	float: right;
 	position: absolute;
-	right: 20px;
-	top: 5px;
+    right: 100px;
+    top: 100px;
 	font-family: Verdana;
 	font-size: 1.1em;
 	text-shadow: 2px 2px 2px darkorange;
 	color: white;
 	width: auto;
-	border-bottom: 1px solid darkorange;
 }
 /*FIN COPY - FUENTES*/
 
@@ -402,4 +405,18 @@ ul>li:last-of-type{
 }
 .fa-book{
 	background-color: none;
+}
+
+.fonts a,.fonts a:hover {
+	color: white;
+	font-size: 0.5em;
+}
+
+.fb,.tw,.ins {
+	width: 30px;
+	height: 30px;
+}
+
+a {
+	    text-decoration: none;
 }
