@@ -216,16 +216,16 @@ span{
     background-image: url('../img/pulp.jpg');
 }
 
-#top-10 div:nth-of-type(10){
+#top-10 div:nth-of-type(8){
     background-image: url('../img/anillo.jpg');
 }
 
-#top-10 div:nth-of-type(8){
+#top-10 div:nth-of-type(9){
     background-image: url('../img/buenofeomalo.jpg');
 }
 
-#top-10 div:nth-of-type(9){
-    background-image: url('../img/clubLucha.jpg');
+#top-10 div:nth-of-type(10){
+    background-image: url('../img/clublucha.jpg');
 }
 
 /*COMIENZO FOOTER*/
@@ -331,7 +331,7 @@ ul>li:last-of-type{
 	bottom: 70px;
 	font-family: 'Satisfy';
     color: darkorange;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 3px 3px 5px white;
     font-size: 40px;
 	text-decoration: none;
 }
@@ -397,8 +397,4 @@ ul>li:last-of-type{
 }
 .fa-book{
 	background-color: none;
-}
-
-li a {
-    color: white;
 }
