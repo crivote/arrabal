@@ -27,8 +27,7 @@ header h1 a, header h1 a:hover{
     text-decoration: none;
 }
 .textaco{
-    background-color:white;
-    opacity: 0.5;
+    color:white;
     text-align: center;
 }
 
