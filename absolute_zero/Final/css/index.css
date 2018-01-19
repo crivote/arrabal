@@ -8,6 +8,8 @@ p{
       font-family: 'Tinos', serif;
   }
 
+
+
 h1, h2, h3, a{
       font-family: 'Michroma', sans-serif;
   }
@@ -49,7 +51,7 @@ header h1{
 .fotoi{
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 247px;
   box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.63);
 }
 
@@ -191,6 +193,13 @@ footer p{
 
 }
 
+/*footer p:last-child::after{
+    content: " \f1f9";
+    font-family:FontAwesome;
+}
+
+*/
+
 footer a{
   color: red;
 }
@@ -215,3 +224,9 @@ body > header{
         padding-right: 5%;
     }
 }
+
+
+
+
+    
+
