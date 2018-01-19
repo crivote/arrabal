@@ -29,6 +29,7 @@ body{
 	animation-name: gameboy;
 	animation-duration: 1.5s;
 	animation-iteration-count: 1;
+	font-size: 25px;
 }
 @keyframes gameboy{
 	from{
@@ -70,6 +71,7 @@ h1{
 }
 .presentacion{
 	margin-left: 10%;
+	margin-top: 3%;
 	width: 90%;
 }
 .caratula{
@@ -236,7 +238,7 @@ article.juegos{
 figure{
 	display:inline-block;
 	position: relative;
-	margin-right: 100px;
+	margin-right: 50px;
 }
 figure::after{
 	content: attr(data-nota);
@@ -402,4 +404,9 @@ article.juegos a:hover::before{
 	article.juegos{
 		width: 40%;
 	}
+}
+/*--------------Código añadido de Undead Developers---------------*/
+
+article>p{
+	    		text-shadow: 0px 3px 6px black;
 }
