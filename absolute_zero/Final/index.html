@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
@@ -9,22 +13,125 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="icon" href="imagenes/logo.ico">
-      
-    <title> Ferrari </title>
+    <title>Ferrari</title>
   </head>
-
   <body>
-
-
     <header id="foto">
       <img src="imagenes/ferrari.png" alt="logo">
       <img src="imagenes/letras-ferrari.png" alt="logo">
-
       <h1>Modelos Ferrari</h1>
     </header>
-
     <section id="descripcion">
-      <img class="fotoi" src="imagenes/foto-index.jpg" alt="foto de una carretera">
+        <div id="divCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#divCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#divCarousel" data-slide-to="1"></li>
+            <li data-target="#divCarousel" data-slide-to="2"></li>
+                <li data-target="#divCarousel" data-slide-to="3"></li>
+                <li data-target="#divCarousel" data-slide-to="4"></li>
+                <li data-target="#divCarousel" data-slide-to="5"></li>
+                <li data-target="#divCarousel" data-slide-to="6"></li>
+                <li data-target="#divCarousel" data-slide-to="7"></li>
+                <li data-target="#divCarousel" data-slide-to="8"></li>
+                <li data-target="#divCarousel" data-slide-to="9"></li>
+                <li data-target="#divCarousel" data-slide-to="10"></li>
+                <li data-target="#divCarousel" data-slide-to="11"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="item active">
+                <img class="fotoi" src="imagenes/foto-index.jpg">
+                <div class="carousel-caption">
+                <h3>Ferrari California 4K</h3>
+                    <p>¡A todo gas!</p>
+                </div>
+            </div>
+                <div class="item">
+                <img class="fotoi" src="imagenes/458italia/458.jpg" alt="F458">
+                    <div class="carousel-caption">
+                    <h3>Ferrari 458 Italia</h3>
+                    <p>MULTIPREMIADO MOTOR V8 CENTRAL TRASERO</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="fotoi" src="imagenes/458Speciale/458s.jpg" alt="458 speciale">
+                     <div class="carousel-caption">
+                    <h3>458 Speciale</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/488Spider/488 spider.jpg" alt="488spider">
+                     <div class="carousel-caption">
+                    <h3>488 Spider</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/californiaT/calit.jpg" alt="fcalit">
+                     <div class="carousel-caption">
+                    <h3>California T</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/f12/F12 berlinetta road.jpg" alt="F12Berli">
+                     <div class="carousel-caption">
+                    <h3>F12</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/ferrari488/488gtb.jpg" alt="f488gtb">
+                 <div class="carousel-caption">
+                    <h3>Ferrari 488</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/ff/ferrari ff.jpg" alt="ff">
+                     <div class="carousel-caption">
+                    <h3>Ferrari FF</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                <img class="fotoi" src="../imagenes/gtc4lusso/4lusso.jpg" alt="f4lusso">
+                     <div class="carousel-caption">
+                    <h3>Gtc4 Lusso</h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                 <img class="fotoi" src="../imagenes/gtc4lussoT/lussot.jpg" alt="flut">
+                     <div class="carousel-caption">
+                    <h3>Gtc4 Lusso T</h3>
+                    <p></p>
+                    </div>
+                </div>
+                 <div class="item">
+                <img class="fotoi" src="../imagenes/portofino/portof.jpg" alt="fporto">
+                     <div class="carousel-caption">
+                    <h3>Gtc4 Lusso T</h3>
+                    <p></p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#divCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+            <a class="right carousel-control" href="#divCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+    
+    
+            <!--<div class="carousel-caption d-none d-md-block">
+            <h5>Ferrari California 4K</h5>
+                <p></p>
+            </div>-->
+
+            </div>
       <article>
         <h2>Introducción</h2>
         <p>
@@ -32,35 +139,21 @@
           compitió con gran éxito con autos Alfa Romeo hasta 1938, cuando fue oficialmente contratado por Alfa Romeo
           como presidente de su departamento de carreras.
         </p>
-
           <p>
             La verdadera pasión de Enzo Ferrari, a pesar de su extensa carrera con automóviles de calle,
             fue siempre la competición automovilística. Su escudería comenzó como patrocinadora independiente para pilotos en diversos coches,
             pero pronto se convirtió en el equipo de la casa de Alfa Romeo. Tras su marcha de Alfa Romeo, Enzo Ferrari comenzó a diseñar y
             fabricar sus propios coches.
          </p>
-
          <p>
            El equipo Ferrari apareció por primera vez en un Gran Premio Europeo tras finalizar la Segunda Guerra Mundial.
          </p>
-
          <h2>Coches:</h2>
-
       </article>
-
     </section>
-    <nav>
-        <ul>
-          <li><a href="#foto">Inicio</a><i class="fa fa-home" aria-hidden="true"></i></li>
-          <li><a href="#descripcion">Texto</a><i class="fa fa-bars" aria-hidden="true"></i></li>
-          <li><a href="#coches">Coches</a><i class="fa fa-car" aria-hidden="true"></i></li>
-        </ul>
-    </nav>
 <main>
       <header>
-
       </header>
-
       <ul id="coches">
     <li><a href="paginas/1.html">458 Italia <img src="imagenes/458italia/peque.png"></a></li>
     <li><a href="paginas/2.html">458 Speciale <img src="imagenes/458Speciale/peque.png"></a></li>
@@ -73,20 +166,18 @@
     <li><a href="paginas/9.html">Gtc4 Lusso T <img src="imagenes/gtc4lussoT/peque.png"></a></li>
     <li><a href="paginas/10.html">Portofino <img src="imagenes/portofino/peque.png"></a></li>
   </ul>
-
 </main>
-
 <footer>
   <p>Realizado por Ralph, LuisDa y Fran.</p>
-
-  <p>Informacion extraída de: <a href="https://www.ferrari.com/es-CL"> Ferrari</a></p>
-
+  <p>Información extraída de: <a href="https://www.ferrari.com/es-CL"> Ferrari</a></p>  
   <img src="imagenes/Footer-logo.png" alt="logo del footer">
-
-
+        <p></p>
 </footer>
-
+      <script type="text/javascript">
+          $("#divCarousel").carousel({
+              pause: 'hover',
+              interval: 2000
+          });
+      </script>
   </body>
-
-
 </html>

@@ -8,13 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="icon" href="../imagenes/logo.ico">
-      
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title> Absolute zero </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   </head>
 
   <body>
 
-
+    <a href="#" class="volv"><i class="fa fa-arrow-up fa-4x" aria-hidden="true"></i></a>
     <header>
       <a href ="../index.html"><img src="../imagenes/ferrari.png" alt="logo"></a>
       <img src="../imagenes/letras-ferrari.png" alt="logo">
@@ -23,7 +26,7 @@
     </header>
       <nav>
         <ul>
-            <li><a href ="../index.html">Inicio<i class="fa fa-home" aria-hidden="true"></i></li>
+            <li><a href ="../index.html">Inicio</a><i class="fa fa-home" aria-hidden="true"></i></li>
             <li><a href="1.html">Anterior</a><i class="fa fa-arrow-left" aria-hidden="true"></i></li>
             <li><a href="3.html">Siguiente</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
         </ul>
@@ -94,11 +97,37 @@ Las innovaciones afectan al vehículo completo e incluyen tanto nuevas patentes 
               </section>
         </main>
     <footer>
-  <h3>Realizado por Ralph LuisDa y Fran.</h3>
-
-  <p> informacion sacada de: <a href="https://www.ferrari.com/es-CL"> Ferrari</a></p>
-
-  <img src="../imagenes/Footer-logo.png" alt="logo del footer">
-              </footer>
+        <div class="row">
+        <div class="col-md-4">
+				<p><i class="fa fa-users" aria-hidden="true"></i> Realizado por: <br /> <span><i class="fa fa-copyright" aria-hidden="true"></i> Abzolute Zero inc.</span></p>
+			</div>
+			<div class="col-md-4">
+				 <p>Informacion sacada de: <a href="https://www.ferrari.com/es-CL">Ferrari</a>.</p>
+			</div>
+			<div class="col-md-4">
+			  <ol class="integrantes">
+				<li> Personal:</li>
+				<li><i class="fa fa-user-o" aria-hidden="true"></i> Javier Pareja.</li>
+				<li><i class="fa fa-user-o" aria-hidden="true"></i> Francisco. </li>
+				<li><i class="fa fa-user-o" aria-hidden="true"></i> Luis David PIPO.</li>
+			  </ol>
+			</div>
+		</div>
+    </footer>
+    <script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+ 	</script>
     </body>
 </html>
