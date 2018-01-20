@@ -4,10 +4,7 @@ body{
   text-align: center;
 }
 
-.tabla{
-  border-top: black 1px solid;
-}
-/* Aqui empieza el header*/
+/* HEADER */
 
 body > header{
   text-align: left;
@@ -26,106 +23,78 @@ header img{
   display: inline-block;
 }
 
-
 header h1{
   position: absolute;
   display: inline;
   font-size: 30px;
   right: 10%;
   bottom: 17px;
-    font-family: 'Michroma', sans-serif;
-
+  font-family: 'Michroma', sans-serif;
 }
 
-/* Aqui termina el header*/
-
-/* Aqui empieza el section con la foto*/
+/* BANNER */
 .foto{
   z-index: 1;
   width: 100%;
   height: auto;
   box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.63);
-
 }
 
-/* Aqui termina el section con la foto*/
+/* ALINEACION NOMBRE, MODELO Y ARTICULO */
+main h2{
+  margin-top: 1%;
+	text-align: center;
+	font-family: 'Michroma';
+}
+.subtitulo{
+	text-align: center;
+}
 
-/*article{
-    font-family: 'Michroma', serif;
-}*/
 h2{
-    font-family: 'Michroma', sans-serif;
+  font-family: 'Michroma', sans-serif;
 	font-size: 2.5em;
 }
+
 p{
-    font-family: 'Michroma', sans-serif;
+  font-family: 'Michroma', sans-serif;
 	font-size: 1em;
 }
-.tabla{
-    text-align:left;
-    border:2px solid lightgray;
-    background-color:lightgray;
-    font-family: 'Tinos', serif;
-}
 
-#contenedor{
-
-}
-
+/* MAIN E HIJOS */
 main{
 	width: 80%;
 	margin: 0 auto;
 }
+
 main article{
-      padding-top: 1em;
+  padding-top: 1em;
   padding-left: 4%;
   padding-right: 4%;
 	font-family: 'Michroma', serif;
 }
 
 main > p{
-    font-family: 'Michroma', sans-serif;
-    font-weight:bold;
+  font-family: 'Michroma', sans-serif;
+  font-weight:bold;
 }
+
+.tabla{
+  border-top: black 1px solid;
+}
+
+.tabla{
+  text-align:left;
+  border:2px solid lightgray;
+  background-color:lightgray;
+  font-family: 'Tinos', serif;
+}
+
 .tabla h2{
 	width: 100%;
 	padding: 10px;
 }
-footer{
-  margin: 0 auto;
-  width: 100%;
-  height: 10%;
-  background-color: black;
-  padding-top: 0.6%;
-  padding-left: 10%;
-  color: white;
-  text-align: left;
-}
 
-footer p{
-  display: inline-block;
-  margin-left: 5%;
-}
-
-footer h3{
-  display: inline-block;
-  font-family: 'Tinos', serif;
-
-
-}
-
-footer a{
-  color: red;
-}
-
-footer a:hover{
-  color: red;
-}
-footer img{
-  width: 3.5%;
-}
-/* Aqui empieza el NAV */
-
+/* Aqui empieza el NAV
 
 nav{
   margin-left: 0;
@@ -180,13 +149,12 @@ nav i{
 nav li:hover{
   transform:translateX(-42px);
 }
-
-
+*/
 /* Aqui termina el NAV */
 
 /* aqui el capi del equipo
    esto de abajo es la parte con las especificaciones y imagenes(no lo comentaron ellos T_T)
-*/
+
 .motor{
     z-index: 100;
     margin:0 auto;
@@ -223,34 +191,27 @@ nav li:hover{
     background-position: right;
     height:200px;
     width:200px;
-}
+}*/
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 600px) {
-    .co2, .trofeo, .dimension, .rendimiento, .motor{
-    background:lightgray;
-    }
- header  h1{
-   visibility: hidden;
+  header  h1{
+    visibility: hidden;
   }
+
   nav{
     visibility: hidden;
-   }
-    body > header{
-        text-align: center;
-        padding-right: 5%;
-    }
+  }
 
-	.tabla h2{
-		font-size: 1.5em;
+  body > header{
+    text-align: center;
+    padding-right: 5%;
+  }
+
+  .tabla h2{
+  		font-size: 1.5em;
 	}
-}
-main h2{
-    margin-top: 1%;
-	text-align: center;
-	font-family: 'Michroma';
-}
-.subtitulo{
-	text-align: center;
 }
 
 /* FLECHA PARA VOLVER ARRIBA */
@@ -268,12 +229,20 @@ main h2{
 	opacity: 1;
 }
 
-/* NAVEGACION */
+/* NAVEGACION POR TODOS LOS COCHES Y MODELOS */
 ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+#coches{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
 #coches  li{
 	height: 150px;
 	border: 1px solid rgba(10, 1, 10, 0.18);
@@ -287,37 +256,34 @@ ul{
 	margin: 1%;
 }
 
-#coches{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-
-}
-
-li img{
-	display: block;
-	margin: 0 auto;
-}
 #coches li:hover{
   background-color: #ffffff;
 }
+
 #coches li a{
   color: black;
 }
+
 #coches li a:hover {
     text-decoration: none;
     color: black;
 }
+
 #navegacion{
   margin: 0 auto;
   background-color: gray;
   width: 100%;
   height: auto;
 }
+
 #navegacion h3{
 	padding: 10px;
 	text-align: center;
+}
+
+li img{
+	display: block;
+	margin: 0 auto;
 }
 
 /* ACORDEON */
@@ -340,18 +306,46 @@ li img{
 }
 
 .panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-	text-align: left;
+  padding: 10px 18px;
+  display: none;
+  background-color: white;
+  text-align: left;
 }
 
-
 /* FOOTER */
-.integrantes li{
-	list-style: none;
+
+footer{
+  margin: 0 auto;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  padding-top: 0.6%;
+  padding-left: 10%;
+  color: white;
+  text-align: left;
 }
 
 footer p{
-	float: left;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+footer h3{
+  display: inline-block;
+  font-family: 'Tinos', serif;
+}
+
+footer a{
+  color: red;
+}
+
+footer a:hover{
+  color: red;
+}
+footer img{
+  width: 3.5%;
+}
+
+.integrantes li{
+	list-style: none;
 }
