@@ -4,7 +4,6 @@ body{
   text-align: center;
 }
 
-
 .tabla{
   border-top: black 1px solid;
 }
@@ -35,7 +34,7 @@ header h1{
   right: 10%;
   bottom: 17px;
     font-family: 'Michroma', sans-serif;
-    
+
 }
 
 /* Aqui termina el header*/
@@ -70,7 +69,7 @@ p{
 }
 
 #contenedor{
-	
+
 }
 
 main{
@@ -240,7 +239,7 @@ nav li:hover{
         text-align: center;
         padding-right: 5%;
     }
-	
+
 	.tabla h2{
 		font-size: 1.5em;
 	}
@@ -262,7 +261,7 @@ main h2{
 	right: 25px;
 	opacity: .7;
 	transition: all 1s;
-	text-decoration:
+	z-index: 10;
 }
 
 .fa-arrow-up:hover, .volv:hover{
@@ -293,7 +292,7 @@ ul{
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
-	
+
 }
 
 li img{
