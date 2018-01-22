@@ -42,16 +42,21 @@ header h1{
 
 /* ALINEACION NOMBRE, MODELO Y ARTICULO */
 main h2{
-  margin-top: 1%;
+	margin-top: 1%;
 	text-align: center;
 	font-family: 'Michroma';
+}
+
+main h3{
+	 text-align: center;
+	font-size: 1.3em;
 }
 .subtitulo{
 	text-align: center;
 }
 
 h2{
-  font-family: 'Michroma', sans-serif;
+	font-family: 'Michroma', sans-serif;
 	font-size: 2.5em;
 }
 
